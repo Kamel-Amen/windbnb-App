@@ -1,0 +1,53 @@
+.holder {
+  width: 84%;
+  padding-top: 25px;
+  margin: 0 auto;
+  & > .logo {
+    color: #f0402c;
+    font-weight: bolder;
+    float: left;
+    & > img {
+      margin-bottom: 4px;
+    }
+  }
+  & > .search-bar {
+    width: 400px;
+    height: 60px;
+    float: right;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ddd, -1px -1px 1px #ddd;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fff;
+    z-index: 10;
+    & > div {
+      padding-top: 15px;
+    }
+    & > div:nth-of-type(1) {
+      border-right: 1px solid #ddd;
+      color: #aaa;
+    }
+    & > .search-icon {
+      text-align: center;
+    }
+    .location {
+      border: 0;
+      border-right: 1px solid #ddd;
+    }
+  }
+}
+
+// Media Queries Start
+@media (max-width: 600px) {
+  .holder {
+    & > .logo {
+      float: none;
+      margin-bottom: 25px;
+    }
+    & > .search-bar {
+      width: 90%;
+    }
+  }
+}
